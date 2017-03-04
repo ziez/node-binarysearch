@@ -200,7 +200,7 @@ function bsclosest(arr, search, comparitor, invert, closest) {
     if(min == arr.length-1 && match < 0) return min;
     if(min == 0 && match > 0) return 0;
 
-    return closest?(invert?min+1:min-1):-1;
+    return invert?min+1:min-1;
   } 
   return -1; 
 }
